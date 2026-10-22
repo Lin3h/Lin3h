@@ -1,0 +1,7 @@
+1. Acesse https://github.com/new
+2. Repository name: Lin3h (exatamente igual ao nome de usuário)
+3. Marque Public. Crie o repositório.
+4. Envie README.md e a pasta assets/ (ambos os arquivos dentro dela).
+5. O GitHub exibirá o README automaticamente em https://github.com/Lin3h
+IMPORTANTE: não adicione estes arquivos a lineh-store-admin; esse é outro repositório.
+OBS: a arte em assets/lin3h-banner.png foi gerada para seu perfil, enquanto os cartões de estatísticas e o texto digitado dependem de provedores externos.
