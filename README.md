@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/lin3h-banner.png" width="100%" alt="Lin3h — universo anime preto e roxo" />
+<img src="./assets/lin3h-banner.svg" width="100%" alt="Lin3h — universo anime preto e roxo" />
 
 <br />
 
