@@ -16,6 +16,15 @@
 <!-- Fim minhas redes -->
 
 </div>
+
+<!-- Extras do universo LIN3H -->
+<p align="center"><img src="./assets/terminal-lin3h.svg" width="92%" alt="Terminal LIN3H animado" /></p>
+<p align="center"><img src="./assets/tecnologias-glow.svg" width="98%" alt="Tecnologias com brilho sequencial" /></p>
+<p align="center"><img src="./assets/elias-lua.svg" width="92%" alt="Elias, gato preto de olhos roxos, piscando" /></p>
+<p align="center"><img src="./assets/jardim-lunar.svg" width="98%" alt="Jardim lunar com pontos luminosos" /></p>
+<p align="center"><img src="./assets/equalizador-lunar.svg" width="98%" alt="Equalizador musical decorativo animado" /></p>
+<!-- Fim extras -->
+
 <!-- O painel animado acima é uma ilustração. Números, barras e contribuições desenhados na arte são ilustrativos. -->
 <p align="center"><img src="./assets/estatisticas-titulo.svg" width="405" alt="ESTATÍSTICAS DO GITHUB" /></p>
 <div align="center" id="estatisticas-reais">
@@ -32,3 +41,5 @@
 <p><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lin3h&theme=midnight_purple" width="98%" alt="Linha do tempo da atividade pública" /></p>
 <sub>Dados públicos de serviços externos, sujeitos a cache e indisponibilidade. Os números desenhados no banner animado são ilustrativos.</sub>
 </div>
+
+<p align="center"><sub>🐍 A cobrinha de contribuições está configurada para gerar no GitHub Actions. Ela aparecerá após a primeira execução e a criação do branch <code>output</code>. <a href="https://github.com/Lin3h/Lin3h/actions/workflows/snake.yml">Executar a primeira vez</a>.</sub></p>
