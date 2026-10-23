@@ -34,6 +34,7 @@ jobs:
           date = now.strftime("%d/%m/%Y")
           weather = "Clima indisponível"
           feels = ""
+          code = -1
           try:
               url = ("https://api.open-meteo.com/v1/forecast?"
                      "latitude=-24.0084&longitude=-46.4121&"
@@ -55,8 +56,19 @@ jobs:
           except Exception as exc:
               print("Weather temporarily unavailable:", exc)
 
+          if code == 0:
+              weather_icon = '<circle cx="0" cy="0" r="14" fill="none" stroke="#E9BAFF" stroke-width="3"/>' + ''.join(f'<path d="M0 -24 V-20" transform="rotate({a})" stroke="#D9A3FF" stroke-width="3" stroke-linecap="round"/>' for a in range(0,360,45))
+          elif code in (1, 2, 3, 45, 48):
+              weather_icon = '<path d="M-24 7Q-24 -5 -12 -7Q-7 -23 9 -16Q20 -15 23 -2Q34 2 29 14H-18Q-29 14 -24 7Z" fill="#7950B6" stroke="#DDB7FF" stroke-width="2"/>'
+          elif code in (51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82, 95, 96, 99):
+              weather_icon = '<path d="M-24 1Q-23 -12 -10 -12Q0 -25 14 -14Q29 -10 27 6H-22Z" fill="#7950B6" stroke="#DDB7FF" stroke-width="2"/>' + ''.join(f'<path d="M{x} 12l-4 10" stroke="#C084FC" stroke-width="2"><animate attributeName="opacity" values=".2;1;.2" dur="{1.1+j*.25}s" repeatCount="indefinite"/></path>' for j,x in enumerate((-13,0,13)))
+          else:
+              weather_icon = '<circle r="12" fill="none" stroke="#C084FC" stroke-width="3"/><path d="M-8 0H8" stroke="#E9D5FF" stroke-width="2"/>'
+
           svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="660" height="252" viewBox="0 0 660 252">
-          <rect x="2" y="2" width="656" height="248" rx="19" fill="#0D0917" stroke="#7845AD" stroke-width="2"/>
+          <defs><filter id="neon" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter><linearGradient id="sheen" x1="0" x2="1"><stop offset="0" stop-color="#8141BE"/><stop offset=".5" stop-color="#E9BFFF"/><stop offset="1" stop-color="#8141BE"/></linearGradient></defs>
+          <rect x="2" y="2" width="656" height="248" rx="19" fill="#0D0917" stroke="#BC7CF4" stroke-width="4" opacity=".45" filter="url(#neon)"/>
+          <rect x="2" y="2" width="656" height="248" rx="19" fill="#0D0917" stroke="url(#sheen)" stroke-width="2"/>
           <rect x="12" y="12" width="636" height="228" rx="14" fill="none" stroke="#342048"/>
           <path d="M26 26H88 M26 26V51 M634 26H572 M634 26V51 M26 226H88 M26 226V202 M634 226H572 M634 226V202" stroke="#A855F7" stroke-width="2" opacity=".75"/>
           <g font-family="monospace" font-size="12" fill="#8654B4">
@@ -77,9 +89,13 @@ jobs:
           <circle cx="526" cy="89" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
           <text x="330" y="146" fill="#B998E0" font-size="15" font-family="monospace" text-anchor="middle">PRAIA GRANDE, SP · BRASIL · UTC−03 · {escape(date)}</text>
           <path d="M24 163H636" stroke="#493065"/>
+          <g transform="translate(160 190)">{weather_icon}</g>
+          <path d="M24 165H636" stroke="#B068F5" stroke-width="1" opacity=".45"><animate attributeName="opacity" values=".18;.85;.18" dur="5s" repeatCount="indefinite"/></path>
           <text x="330" y="194" fill="#D8B4FE" font-size="21" font-family="monospace" text-anchor="middle">{escape(weather)}</text>
           <text x="330" y="217" fill="#A977DC" font-size="14" font-family="monospace" text-anchor="middle">{escape(feels)}</text>
-          <path d="M253 233H407" stroke="#64388C" stroke-width="2"/><path d="M292 233H368" stroke="#C084FC" stroke-width="3" stroke-linecap="round"><animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/></path>
+          <rect x="222" y="232" width="216" height="6" rx="3" fill="#2F1A47"/>
+          <rect x="222" y="232" width="55" height="6" rx="3" fill="url(#sheen)"><animate attributeName="x" values="222;383;222" dur="5s" repeatCount="indefinite"/></rect>
+          <g fill="#E3BBFF"><path d="M60 110l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"><animate attributeName="opacity" values=".15;.85;.15" dur="4s" repeatCount="indefinite"/></path><path d="M592 110l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"><animate attributeName="opacity" values=".8;.2;.8" dur="3s" repeatCount="indefinite"/></path></g>
           </svg>'''
           with open("lin3h-clock.svg", "w", encoding="utf-8") as fh:
               fh.write(svg)
