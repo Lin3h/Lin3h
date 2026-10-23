@@ -4,7 +4,7 @@
 </a>
 
 <!-- Minhas redes LIN3H -->
-<p align="center"><img src="./assets/minhas-redes-titulo.svg" alt="MINHAS REDES" width="520" /></p>
+<p align="center"><img src="./assets/minhas-redes-titulo.svg" alt="MINHAS REDES" width="400" /></p>
 <p align="center">
   <a href="https://discord.com/users/852752783946154034" title="Discord"><img src="https://img.shields.io/badge/Discord-1A1128?style=for-the-badge&logo=discord&logoColor=5865F2&labelColor=1A1128" alt="Discord" height="64" /></a>
     <a href="https://roblox.com/users/2287197746/profile" title="Roblox"><img src="https://img.shields.io/badge/Roblox-1A1128?style=for-the-badge&logo=roblox&logoColor=FFFFFF&labelColor=1A1128" alt="Roblox" height="64" /></a>
@@ -17,7 +17,7 @@
 
 </div>
 <!-- O painel animado acima é uma ilustração. Números, barras e contribuições desenhados na arte são ilustrativos. -->
-<p align="center"><img src="./assets/estatisticas-titulo.svg" width="600" alt="ESTATÍSTICAS DO GITHUB" /></p>
+<p align="center"><img src="./assets/estatisticas-titulo.svg" width="405" alt="ESTATÍSTICAS DO GITHUB" /></p>
 <div align="center" id="estatisticas-reais">
 <table>
 <tr>
@@ -26,9 +26,9 @@
 </tr>
 <tr>
 <td align="center" width="50%"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Lin3h&theme=midnight-purple&hide_border=true&background=0D0B16&ring=A855F7&fire=C084FC&currStreakLabel=C084FC" width="100%" alt="Sequência de contribuições" /></td>
-<td align="center" width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Lin3h&theme=github_dark&utcOffset=-3" width="100%" alt="Horários de contribuições por período do dia" /></td>
+<td align="center" width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Lin3h&theme=radical&utcOffset=-3" width="100%" alt="Horários de contribuições por período do dia" /></td>
 </tr>
 </table>
-<p><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lin3h&theme=github_dark" width="98%" alt="Linha do tempo da atividade pública" /></p>
+<p><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lin3h&theme=radical" width="98%" alt="Linha do tempo da atividade pública" /></p>
 <sub>Dados públicos de serviços externos, sujeitos a cache e indisponibilidade. Os números desenhados no banner animado são ilustrativos.</sub>
 </div>
