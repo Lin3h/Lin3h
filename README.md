@@ -46,3 +46,12 @@
 
 <p align="center"><strong>🐍 COBRINHA DAS CONTRIBUIÇÕES</strong></p>
 <p align="center"><img src="https://raw.githubusercontent.com/Lin3h/Lin3h/output/github-snake.svg" width="98%" alt="Cobrinha animada percorrendo as contribuições reais do GitHub de Lin3h" /></p>
+
+<!-- LIN3H: encerramento programado em SVG (sem JavaScript e sem banners fotográficos) -->
+<div align="center">
+<p><img src="./assets/footer-typing.svg" width="93%" alt="Texto de apresentação LIN3H alternando frases" /></p>
+<p><img src="./assets/footer-status.svg" width="93%" alt="Painel de status decorativo LIN3H com LEDs animados" /></p>
+<p><img src="./assets/footer-loading.svg" width="93%" alt="Barra de progresso decorativa em movimento" /></p>
+<p><img src="./assets/footer-signature.svg" width="93%" alt="Assinatura LIN3H com brilho suave" /></p>
+</div>
+<!-- Fim do rodapé LIN3H -->
