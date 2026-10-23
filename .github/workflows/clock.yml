@@ -20,31 +20,58 @@ jobs:
         with:
           ref: output
           fetch-depth: 0
-      - name: Refresh São Paulo digital clock
-        env:
-          TZ: America/Sao_Paulo
+      - name: Refresh São Paulo time and weather
         run: |
           python3 - <<'PY'
           from datetime import datetime
           from zoneinfo import ZoneInfo
           from html import escape
+          import json
+          from urllib.request import urlopen
+
           now = datetime.now(ZoneInfo("America/Sao_Paulo"))
           stamp = now.strftime("%H:%M")
           date = now.strftime("%d/%m/%Y")
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="660" height="155" viewBox="0 0 660 155">
-          <rect x="2" y="2" width="656" height="151" rx="19" fill="#0D0917" stroke="#7845AD" stroke-width="2"/>
+          weather = "Clima indisponível"
+          feels = ""
+          try:
+              url = ("https://api.open-meteo.com/v1/forecast?"
+                     "latitude=-23.5505&longitude=-46.6333&"
+                     "current=temperature_2m,apparent_temperature,weather_code&"
+                     "timezone=America%2FSao_Paulo")
+              with urlopen(url, timeout=15) as response:
+                  data = json.load(response)["current"]
+              code = int(data["weather_code"])
+              desc = ("Céu limpo" if code == 0 else
+                      "Parcialmente nublado" if code in (1, 2) else
+                      "Nublado" if code == 3 else
+                      "Névoa" if code in (45, 48) else
+                      "Garoa" if code in (51, 53, 55, 56, 57) else
+                      "Chuva" if code in (61, 63, 65, 66, 67, 80, 81, 82) else
+                      "Tempestade" if code in (95, 96, 99) else
+                      "Neve" if code in (71, 73, 75, 77, 85, 86) else "Clima variável")
+              weather = f'{round(float(data["temperature_2m"]))}°C · {desc}'
+              feels = f'Sensação {round(float(data["apparent_temperature"]))}°C'
+          except Exception as exc:
+              print("Weather temporarily unavailable:", exc)
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="660" height="232" viewBox="0 0 660 232">
+          <rect x="2" y="2" width="656" height="228" rx="19" fill="#0D0917" stroke="#7845AD" stroke-width="2"/>
+          <path d="M24 161H636" stroke="#493065" stroke-width="1"/>
           <text x="330" y="37" fill="#D8B4FE" font-size="17" font-family="monospace" text-anchor="middle" letter-spacing="3">LIN3H // LOCAL TIME</text>
-          <text x="330" y="102" fill="#E9D5FF" font-size="56" font-family="monospace" font-weight="bold" text-anchor="middle">{escape(stamp)}</text>
-          <circle cx="535" cy="82" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
-          <text x="330" y="133" fill="#A977DC" font-size="16" font-family="monospace" text-anchor="middle">SÃO PAULO • UTC−03 • {date}</text>
+          <text x="330" y="109" fill="#E9D5FF" font-size="60" font-family="monospace" font-weight="bold" text-anchor="middle">{escape(stamp)}</text>
+          <circle cx="526" cy="88" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
+          <text x="330" y="145" fill="#B998E0" font-size="15" font-family="monospace" text-anchor="middle">SÃO PAULO, SP · BRASIL · UTC−03 · {escape(date)}</text>
+          <text x="330" y="189" fill="#D8B4FE" font-size="21" font-family="monospace" text-anchor="middle">{escape(weather)}</text>
+          <text x="330" y="213" fill="#A977DC" font-size="14" font-family="monospace" text-anchor="middle">{escape(feels)}</text>
           </svg>'''
-          with open("lin3h-clock.svg","w",encoding="utf-8") as fh:
+          with open("lin3h-clock.svg", "w", encoding="utf-8") as fh:
               fh.write(svg)
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add lin3h-clock.svg
           if ! git diff --cached --quiet; then
-            git commit -m "Update São Paulo clock"
+            git commit -m "Update São Paulo clock and weather"
             git push origin output
           fi
