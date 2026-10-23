@@ -19,16 +19,16 @@
 <!-- O painel animado acima é uma ilustração. Números, barras e contribuições desenhados na arte são ilustrativos. -->
 <h3 align="center">💜 Estatísticas reais do GitHub</h3>
 <div align="center" id="estatisticas-reais">
-<img src="https://github-readme-stats.vercel.app/api?username=Lin3h&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=C084FC&text_color=DDD6FE&icon_color=A855F7" height="165" alt="Estatísticas públicas reais de Lin3h" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lin3h&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=C084FC&text_color=DDD6FE" height="165" alt="Linguagens públicas de Lin3h" />
-<br/><br/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lin3h&theme=midnight_purple" width="98%" alt="Linha do tempo de contribuições do GitHub" />
-<br/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Lin3h&theme=midnight-purple&hide_border=true&background=0D0B16&ring=A855F7&fire=C084FC&currStreakLabel=C084FC" width="75%" alt="Sequência de contribuições do GitHub" />
-<br/>
-<img src="https://github-profile-trophy.vercel.app/?username=Lin3h&theme=discord&no-frame=true&no-bg=true&column=4&margin-w=8" width="98%" alt="Conquistas do perfil GitHub" />
-<br/>
-<sub>Os cartões mostram dados públicos fornecidos por serviços externos; valores podem estar em cache e nenhum número é inventado.</sub>
-<br/>
-<sub>Estatísticas obtidas de serviço externo, sujeitas a cache ou indisponibilidade. A arte acima contém números ilustrativos.</sub>
+<table>
+<tr>
+<td align="center" width="50%"><img src="https://github-readme-stats.vercel.app/api?username=Lin3h&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=C084FC&text_color=DDD6FE&icon_color=A855F7" width="100%" alt="Estatísticas públicas de Lin3h" /></td>
+<td align="center" width="50%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lin3h&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=C084FC&text_color=DDD6FE" width="100%" alt="Linguagens de repositórios públicos" /></td>
+</tr>
+<tr>
+<td align="center" width="50%"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Lin3h&theme=midnight-purple&hide_border=true&background=0D0B16&ring=A855F7&fire=C084FC&currStreakLabel=C084FC" width="100%" alt="Sequência de contribuições" /></td>
+<td align="center" width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Lin3h&theme=github_dark&utcOffset=-3" width="100%" alt="Horários de contribuições por período do dia" /></td>
+</tr>
+</table>
+<p><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lin3h&theme=github_dark" width="98%" alt="Linha do tempo da atividade pública" /></p>
+<sub>Dados públicos de serviços externos, sujeitos a cache e indisponibilidade. Os números desenhados no banner animado são ilustrativos.</sub>
 </div>
