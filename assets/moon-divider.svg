@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="150" viewBox="0 0 1050 150">
-<defs><linearGradient id="line"><stop stop-color="#100819"/><stop offset=".5" stop-color="#b576f7"/><stop offset="1" stop-color="#100819"/></linearGradient></defs>
-<rect width="1050" height="150" rx="15" fill="#100a1d"/>
-<path d="M45 80H400 M650 80H1005" stroke="url(#line)" stroke-width="2"/>
-<circle cx="525" cy="75" r="48" fill="#b47aff"/>
-<circle cx="545" cy="61" r="44" fill="#100a1d"/>
-<g fill="#e6c8ff"><path d="M423 30 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5z"/><path d="M629 89 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/></g>
-<g transform="translate(514 87)" fill="#080510" stroke="#c490ff" stroke-width="1.5"><path d="M-17 16 L-20 -14 L-10 -6 Q0 -11 10 -6 L20 -14 L17 16 Q0 27 -17 16z"/><circle cx="-7" cy="9" r="2" fill="#b783ff" stroke="none"/><circle cx="7" cy="9" r="2" fill="#b783ff" stroke="none"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" role="img" aria-label="Lua, estrelas e gato preto em roxo">
+ <defs><linearGradient id="g"><stop stop-color="#392058"/><stop offset=".5" stop-color="#bd8aff"/><stop offset="1" stop-color="#392058"/></linearGradient></defs>
+ <rect width="1000" height="120" fill="#090612" rx="20"/>
+ <path d="M50 60 H350 M650 60 H950" stroke="url(#g)" stroke-width="2"/>
+ <g fill="#bd8aff"><path d="M380 60l8-8 8 8-8 8z"/><path d="M612 60l8-8 8 8-8 8z"/></g>
+ <path d="M496 19a43 43 0 1 0 35 72 39 39 0 0 1-35-72" fill="#b481ff"/>
+ <path d="M480 82l-17-14-5 20c-10 14 0 24 22 24s32-10 22-24l-5-20z" fill="#1c122c" stroke="#a667e8" stroke-width="2"/>
+ <circle cx="473" cy="91" r="3" fill="#c995ff"/><circle cx="487" cy="91" r="3" fill="#c995ff"/>
+ <g fill="#dfbeff"><circle cx="425" cy="30" r="3"/><circle cx="580" cy="40" r="3"/><circle cx="545" cy="17" r="2"/></g>
 </svg>
