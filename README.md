@@ -42,4 +42,7 @@
 <sub>Dados públicos de serviços externos, sujeitos a cache e indisponibilidade. Os números desenhados no banner animado são ilustrativos.</sub>
 </div>
 
-<p align="center"><sub>🐍 A cobrinha de contribuições está configurada para gerar no GitHub Actions. Ela aparecerá após a primeira execução e a criação do branch <code>output</code>. <a href="https://github.com/Lin3h/Lin3h/actions/workflows/snake.yml">Executar a primeira vez</a>.</sub></p>
+
+
+<p align="center"><strong>🐍 COBRINHA DAS CONTRIBUIÇÕES</strong></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Lin3h/Lin3h/output/github-snake.svg" width="98%" alt="Cobrinha animada percorrendo as contribuições reais do GitHub de Lin3h" /></p>
