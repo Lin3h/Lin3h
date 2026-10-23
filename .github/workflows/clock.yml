@@ -1,0 +1,50 @@
+name: LIN3H Clock
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/clock.yml'
+  schedule:
+    - cron: '*/30 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: lin3h-clock
+  cancel-in-progress: false
+jobs:
+  render-clock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          fetch-depth: 0
+      - name: Refresh São Paulo digital clock
+        env:
+          TZ: America/Sao_Paulo
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from html import escape
+          now = datetime.now(ZoneInfo("America/Sao_Paulo"))
+          stamp = now.strftime("%H:%M")
+          date = now.strftime("%d/%m/%Y")
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="660" height="155" viewBox="0 0 660 155">
+          <rect x="2" y="2" width="656" height="151" rx="19" fill="#0D0917" stroke="#7845AD" stroke-width="2"/>
+          <text x="330" y="37" fill="#D8B4FE" font-size="17" font-family="monospace" text-anchor="middle" letter-spacing="3">LIN3H // LOCAL TIME</text>
+          <text x="330" y="102" fill="#E9D5FF" font-size="56" font-family="monospace" font-weight="bold" text-anchor="middle">{escape(stamp)}</text>
+          <circle cx="535" cy="82" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
+          <text x="330" y="133" fill="#A977DC" font-size="16" font-family="monospace" text-anchor="middle">SÃO PAULO • UTC−03 • {date}</text>
+          </svg>'''
+          with open("lin3h-clock.svg","w",encoding="utf-8") as fh:
+              fh.write(svg)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lin3h-clock.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update São Paulo clock"
+            git push origin output
+          fi
