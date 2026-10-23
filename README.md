@@ -21,14 +21,14 @@
 <div align="center" id="estatisticas-reais">
 <table>
 <tr>
-<td align="center" width="50%"><img src="https://github-readme-stats.vercel.app/api?username=Lin3h&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=C084FC&text_color=DDD6FE&icon_color=A855F7" width="100%" alt="Estatísticas públicas de Lin3h" /></td>
-<td align="center" width="50%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lin3h&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=C084FC&text_color=DDD6FE" width="100%" alt="Linguagens de repositórios públicos" /></td>
+<td align="center" width="50%"><img src="https://github-readme-stats.vercel.app/api?username=Lin3h&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=B877F7&text_color=FFFFFF&icon_color=A855F7" width="100%" alt="Estatísticas públicas de Lin3h" /></td>
+<td align="center" width="50%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lin3h&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=B877F7&text_color=FFFFFF" width="100%" alt="Linguagens de repositórios públicos" /></td>
 </tr>
 <tr>
 <td align="center" width="50%"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Lin3h&theme=midnight-purple&hide_border=true&background=0D0B16&ring=A855F7&fire=C084FC&currStreakLabel=C084FC" width="100%" alt="Sequência de contribuições" /></td>
-<td align="center" width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Lin3h&theme=radical&utcOffset=-3" width="100%" alt="Horários de contribuições por período do dia" /></td>
+<td align="center" width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Lin3h&theme=midnight_purple&utcOffset=-3" width="100%" alt="Horários de contribuições por período do dia" /></td>
 </tr>
 </table>
-<p><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lin3h&theme=radical" width="98%" alt="Linha do tempo da atividade pública" /></p>
+<p><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lin3h&theme=midnight_purple" width="98%" alt="Linha do tempo da atividade pública" /></p>
 <sub>Dados públicos de serviços externos, sujeitos a cache e indisponibilidade. Os números desenhados no banner animado são ilustrativos.</sub>
 </div>
