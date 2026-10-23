@@ -47,6 +47,11 @@
 <p align="center"><strong>🐍 COBRINHA DAS CONTRIBUIÇÕES</strong></p>
 <p align="center"><img src="https://raw.githubusercontent.com/Lin3h/Lin3h/output/github-snake.svg" width="98%" alt="Cobrinha animada percorrendo as contribuições reais do GitHub de Lin3h" /></p>
 
+<!-- Relógio cyberpunk: hora de São Paulo, atualizada periodicamente pelo GitHub Actions -->
+<p align="center"><a href="https://clocksimulator.com/digital/?tz=America/Sao_Paulo" title="Abrir relógio ao vivo com segundos"><img src="https://raw.githubusercontent.com/Lin3h/Lin3h/output/lin3h-clock.svg" width="72%" alt="LIN3H // LOCAL TIME — relógio de São Paulo atualizado a cada 30 minutos" /></a></p>
+<p align="center"><sub>⏱ Atualização aproximada a cada 30 minutos · Clique para ver os segundos ao vivo.</sub></p>
+
+
 <!-- LIN3H: encerramento programado em SVG (sem JavaScript e sem banners fotográficos) -->
 <div align="center">
 <p><img src="./assets/footer-typing.svg" width="93%" alt="Texto de apresentação LIN3H alternando frases" /></p>
