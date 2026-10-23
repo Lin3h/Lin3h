@@ -58,7 +58,6 @@
 
 <!-- Componentes programados: constelações, chuva digital, código e projetos públicos -->
 <div align="center">
-<p><img src="./assets/code-constellation.svg" width="93%" alt="Constelação Elias animada por código SVG" /></p>
 <p><img src="./assets/code-binary.svg" width="93%" alt="Chuva digital roxa em SVG" /></p>
 <p><img src="./assets/code-typing.svg" width="93%" alt="Código LIN3H com cursor animado" /></p>
 
