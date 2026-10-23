@@ -22,7 +22,6 @@
 <p align="center"><img src="./assets/tecnologias-glow.svg" width="98%" alt="Tecnologias com brilho sequencial" /></p>
 <p align="center"><img src="./assets/elias-lua.svg" width="92%" alt="Elias, gato preto de olhos roxos, piscando" /></p>
 <p align="center"><img src="./assets/jardim-lunar.svg" width="98%" alt="Jardim lunar com pontos luminosos" /></p>
-<p align="center"><img src="./assets/equalizador-lunar.svg" width="98%" alt="Equalizador musical decorativo animado" /></p>
 <!-- Fim extras -->
 
 <!-- O painel animado acima é uma ilustração. Números, barras e contribuições desenhados na arte são ilustrativos. -->
