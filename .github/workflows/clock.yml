@@ -55,15 +55,31 @@ jobs:
           except Exception as exc:
               print("Weather temporarily unavailable:", exc)
 
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="660" height="232" viewBox="0 0 660 232">
-          <rect x="2" y="2" width="656" height="228" rx="19" fill="#0D0917" stroke="#7845AD" stroke-width="2"/>
-          <path d="M24 161H636" stroke="#493065" stroke-width="1"/>
-          <text x="330" y="37" fill="#D8B4FE" font-size="17" font-family="monospace" text-anchor="middle" letter-spacing="3">LIN3H // LOCAL TIME</text>
-          <text x="330" y="109" fill="#E9D5FF" font-size="60" font-family="monospace" font-weight="bold" text-anchor="middle">{escape(stamp)}</text>
-          <circle cx="526" cy="88" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
-          <text x="330" y="145" fill="#B998E0" font-size="15" font-family="monospace" text-anchor="middle">PRAIA GRANDE, SP · BRASIL · UTC−03 · {escape(date)}</text>
-          <text x="330" y="189" fill="#D8B4FE" font-size="21" font-family="monospace" text-anchor="middle">{escape(weather)}</text>
-          <text x="330" y="213" fill="#A977DC" font-size="14" font-family="monospace" text-anchor="middle">{escape(feels)}</text>
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="660" height="252" viewBox="0 0 660 252">
+          <rect x="2" y="2" width="656" height="248" rx="19" fill="#0D0917" stroke="#7845AD" stroke-width="2"/>
+          <rect x="12" y="12" width="636" height="228" rx="14" fill="none" stroke="#342048"/>
+          <path d="M26 26H88 M26 26V51 M634 26H572 M634 26V51 M26 226H88 M26 226V202 M634 226H572 M634 226V202" stroke="#A855F7" stroke-width="2" opacity=".75"/>
+          <g font-family="monospace" font-size="12" fill="#8654B4">
+            <text x="42" y="77">&lt;/&gt;</text>
+            <text x="577" y="77">// 01</text>
+            <text x="42" y="199">LIN3H.exe</text>
+            <text x="542" y="199">moon:on</text>
+          </g>
+          <g transform="translate(106 36)"><circle r="10" fill="#C084FC"/><circle cx="5" cy="-3" r="10" fill="#0D0917"/></g>
+          <g fill="#C89BFA">
+            <circle cx="539" cy="39" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="2.1s" repeatCount="indefinite"/></circle>
+            <circle cx="557" cy="50" r="2"><animate attributeName="opacity" values="1;.2;1" dur="3.2s" repeatCount="indefinite"/></circle>
+            <circle cx="127" cy="211" r="2"><animate attributeName="opacity" values=".3;1;.3" dur="2.8s" repeatCount="indefinite"/></circle>
+            <circle cx="514" cy="211" r="2"><animate attributeName="opacity" values="1;.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
+          </g>
+          <text x="330" y="40" fill="#D8B4FE" font-size="17" font-family="monospace" text-anchor="middle" letter-spacing="3">LIN3H // LOCAL TIME</text>
+          <text x="330" y="111" fill="#E9D5FF" font-size="60" font-family="monospace" font-weight="bold" text-anchor="middle">{escape(stamp)}</text>
+          <circle cx="526" cy="89" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
+          <text x="330" y="146" fill="#B998E0" font-size="15" font-family="monospace" text-anchor="middle">PRAIA GRANDE, SP · BRASIL · UTC−03 · {escape(date)}</text>
+          <path d="M24 163H636" stroke="#493065"/>
+          <text x="330" y="194" fill="#D8B4FE" font-size="21" font-family="monospace" text-anchor="middle">{escape(weather)}</text>
+          <text x="330" y="217" fill="#A977DC" font-size="14" font-family="monospace" text-anchor="middle">{escape(feels)}</text>
+          <path d="M253 233H407" stroke="#64388C" stroke-width="2"/><path d="M292 233H368" stroke="#C084FC" stroke-width="3" stroke-linecap="round"><animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/></path>
           </svg>'''
           with open("lin3h-clock.svg", "w", encoding="utf-8") as fh:
               fh.write(svg)
