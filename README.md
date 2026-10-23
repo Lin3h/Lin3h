@@ -55,3 +55,16 @@
 <p><img src="./assets/footer-signature.svg" width="93%" alt="Assinatura LIN3H com brilho suave" /></p>
 </div>
 <!-- Fim do rodapé LIN3H -->
+
+<!-- Componentes programados: constelações, chuva digital, código e projetos públicos -->
+<div align="center">
+<p><img src="./assets/code-constellation.svg" width="93%" alt="Constelação Elias animada por código SVG" /></p>
+<p><img src="./assets/code-binary.svg" width="93%" alt="Chuva digital roxa em SVG" /></p>
+<p><img src="./assets/code-typing.svg" width="93%" alt="Código LIN3H com cursor animado" /></p>
+
+### ✦ Projetos públicos · LIN3H
+<a href="https://github.com/Lin3h?tab=repositories"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Lin3h&repo=Lin3h&theme=midnight-purple&hide_border=true&bg_color=0D0B16&title_color=C084FC&text_color=FFFFFF&icon_color=A855F7" alt="Repositório público do perfil LIN3H" /></a>
+<p><a href="https://github.com/Lin3h?tab=repositories">↗ Explorar todos os repositórios públicos</a></p>
+</div>
+<!-- Fim dos componentes programados -->
+
