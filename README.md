@@ -20,7 +20,6 @@
 <!-- Extras do universo LIN3H -->
 <p align="center"><img src="./assets/terminal-lin3h.svg" width="92%" alt="Terminal LIN3H animado" /></p>
 <p align="center"><img src="./assets/elias_guardiao_lunar_final_animado.webp" width="92%" alt="ELIAS — GUARDIÃO LUNAR animado" /></p>
-<p align="center"><img src="./assets/jardim_lunar_moldura_animado.webp" width="98%" alt="Jardim Lunar animado" /></p>
 <!-- Fim extras -->
 
 <!-- O painel animado acima é uma ilustração. Números, barras e contribuições desenhados na arte são ilustrativos. -->
@@ -41,6 +40,9 @@
 </div>
 
 
+
+<!-- Jardim Lunar entre estatísticas e contribuições -->
+<p align="center"><img src="./assets/jardim_lunar_moldura_animado.webp" width="98%" alt="Jardim Lunar animado" /></p>
 
 <p align="center"><strong>🐍 COBRINHA DAS CONTRIBUIÇÕES</strong></p>
 <p align="center"><img src="https://raw.githubusercontent.com/Lin3h/Lin3h/output/github-snake.svg" width="98%" alt="Cobrinha animada percorrendo as contribuições reais do GitHub de Lin3h" /></p>
