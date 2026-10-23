@@ -20,7 +20,7 @@ jobs:
         with:
           ref: output
           fetch-depth: 0
-      - name: Refresh São Paulo time and weather
+      - name: Refresh Praia Grande weather and Brasília time
         run: |
           python3 - <<'PY'
           from datetime import datetime
@@ -36,7 +36,7 @@ jobs:
           feels = ""
           try:
               url = ("https://api.open-meteo.com/v1/forecast?"
-                     "latitude=-23.5505&longitude=-46.6333&"
+                     "latitude=-24.0084&longitude=-46.4121&"
                      "current=temperature_2m,apparent_temperature,weather_code&"
                      "timezone=America%2FSao_Paulo")
               with urlopen(url, timeout=15) as response:
@@ -61,7 +61,7 @@ jobs:
           <text x="330" y="37" fill="#D8B4FE" font-size="17" font-family="monospace" text-anchor="middle" letter-spacing="3">LIN3H // LOCAL TIME</text>
           <text x="330" y="109" fill="#E9D5FF" font-size="60" font-family="monospace" font-weight="bold" text-anchor="middle">{escape(stamp)}</text>
           <circle cx="526" cy="88" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
-          <text x="330" y="145" fill="#B998E0" font-size="15" font-family="monospace" text-anchor="middle">SÃO PAULO, SP · BRASIL · UTC−03 · {escape(date)}</text>
+          <text x="330" y="145" fill="#B998E0" font-size="15" font-family="monospace" text-anchor="middle">PRAIA GRANDE, SP · BRASIL · UTC−03 · {escape(date)}</text>
           <text x="330" y="189" fill="#D8B4FE" font-size="21" font-family="monospace" text-anchor="middle">{escape(weather)}</text>
           <text x="330" y="213" fill="#A977DC" font-size="14" font-family="monospace" text-anchor="middle">{escape(feels)}</text>
           </svg>'''
