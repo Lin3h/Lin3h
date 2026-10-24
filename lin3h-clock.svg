@@ -18,14 +18,14 @@
   <circle cx="514" cy="211" r="2"><animate attributeName="opacity" values="1;.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
 </g>
 <text x="330" y="40" fill="#D8B4FE" font-size="17" font-family="monospace" text-anchor="middle" letter-spacing="3">LIN3H // LOCAL TIME</text>
-<text x="330" y="111" fill="#E9D5FF" font-size="60" font-family="monospace" font-weight="bold" text-anchor="middle">08:26</text>
+<text x="330" y="111" fill="#E9D5FF" font-size="60" font-family="monospace" font-weight="bold" text-anchor="middle">11:46</text>
 <circle cx="526" cy="89" r="5" fill="#C084FC"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
 <text x="330" y="146" fill="#B998E0" font-size="15" font-family="monospace" text-anchor="middle">PRAIA GRANDE, SP · BRASIL · UTC−03 · 24/10/2026</text>
 <path d="M24 163H636" stroke="#493065"/>
-<g transform="translate(160 190)"><path d="M-24 7Q-24 -5 -12 -7Q-7 -23 9 -16Q20 -15 23 -2Q34 2 29 14H-18Q-29 14 -24 7Z" fill="#7950B6" stroke="#DDB7FF" stroke-width="2"/></g>
+<g transform="translate(160 190)"><path d="M-24 1Q-23 -12 -10 -12Q0 -25 14 -14Q29 -10 27 6H-22Z" fill="#7950B6" stroke="#DDB7FF" stroke-width="2"/><path d="M-13 12l-4 10" stroke="#C084FC" stroke-width="2"><animate attributeName="opacity" values=".2;1;.2" dur="1.1s" repeatCount="indefinite"/></path><path d="M0 12l-4 10" stroke="#C084FC" stroke-width="2"><animate attributeName="opacity" values=".2;1;.2" dur="1.35s" repeatCount="indefinite"/></path><path d="M13 12l-4 10" stroke="#C084FC" stroke-width="2"><animate attributeName="opacity" values=".2;1;.2" dur="1.6s" repeatCount="indefinite"/></path></g>
 <path d="M24 165H636" stroke="#B068F5" stroke-width="1" opacity=".45"><animate attributeName="opacity" values=".18;.85;.18" dur="5s" repeatCount="indefinite"/></path>
-<text x="330" y="194" fill="#D8B4FE" font-size="21" font-family="monospace" text-anchor="middle">23°C · Nublado</text>
-<text x="330" y="217" fill="#A977DC" font-size="14" font-family="monospace" text-anchor="middle">Sensação 27°C</text>
+<text x="330" y="194" fill="#D8B4FE" font-size="21" font-family="monospace" text-anchor="middle">24°C · Garoa</text>
+<text x="330" y="217" fill="#A977DC" font-size="14" font-family="monospace" text-anchor="middle">Sensação 28°C</text>
 <rect x="222" y="232" width="216" height="6" rx="3" fill="#2F1A47"/>
 <rect x="222" y="232" width="55" height="6" rx="3" fill="url(#sheen)"><animate attributeName="x" values="222;383;222" dur="5s" repeatCount="indefinite"/></rect>
 <g fill="#E3BBFF"><path d="M60 110l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"><animate attributeName="opacity" values=".15;.85;.15" dur="4s" repeatCount="indefinite"/></path><path d="M592 110l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"><animate attributeName="opacity" values=".8;.2;.8" dur="3s" repeatCount="indefinite"/></path></g>
